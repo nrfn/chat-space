@@ -51,9 +51,9 @@ Things you may want to cover:
 
 ## chatテーブル----------------------------------------
 |Column|Type|Options|
-|user_id|integer|null: false;
+|user_id|integer|null: false;|
 |group_id|integer|
-|text|text|null: false;
+|text|text|null: false;|
 ### Association
 belongs_to : user
 belongs_to : group
