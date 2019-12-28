@@ -19,19 +19,16 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
 
 ## usersテーブル------------------------------------
 |Column|Type|Options|
 |------|----|-------|
 |name|Text|null:false;|
-|pass|Text|unique: turue, null: false;|
-|email|Text|null: false;|
+|pass|Text|null: false;|
 ### Association
 - has_many : groups :through: :groups_users
 - has_many : chats
+- has_many : groups_users
 
 ## groups_usersテーブル-------------------------------
 |Column|Type|Options|
@@ -45,17 +42,15 @@ Things you may want to cover:
 ## groupsテーブル--------------------------------------
 |Column|Type|Options|
 |group_name|text|null: false;
-|user_id|integer|null: false;
 ### Association
 - has_many : users :through: :groups_users
 - has_many : chats
+- has_many : groups_users
 
-## chatテーブル----------------------------------------
+## chatsテーブル----------------------------------------
 |Column|Type|Options|
-|user_id|integer|null: false;|
-|group_id|integer|
-|text|text|null: false;|
+|chat|text|null: false;|
+|pic|image|
 ### Association
 belongs_to : user
 belongs_to : group
-  
