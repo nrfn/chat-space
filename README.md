@@ -22,3 +22,38 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## usersテーブル------------------------------------
+|Column|Type|Options|
+|------|----|-------|
+|name|Text|null:false;|
+|pass|Text|unique: turue, null: false;|
+|email|Text|null: false;|
+### Association
+- has_many : groups
+- has_many : tweets
+
+## groups_usersテーブル-------------------------------
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :group
+- belongs_to :user
+
+## groupsテーブル--------------------------------------
+|Column|Type|Options|
+|group_name|text|null: false;
+|user_id|integer|null: false;
+### Association
+- has_many : user
+
+## chatテーブル----------------------------------------
+|Column|Type|Options|
+|user_id|integer|null: false;
+|group_id|integer|
+|text|text|null: false;
+### Association
+belongs_to : user
+belongs_to : group
