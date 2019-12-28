@@ -30,8 +30,8 @@ Things you may want to cover:
 |pass|Text|unique: turue, null: false;|
 |email|Text|null: false;|
 ### Association
-- has_many : groups
-- has_many : tweets
+- has_many : groups :through: :groups_users
+- has_many : chats
 
 ## groups_usersテーブル-------------------------------
 |Column|Type|Options|
@@ -47,7 +47,8 @@ Things you may want to cover:
 |group_name|text|null: false;
 |user_id|integer|null: false;
 ### Association
-- has_many : user
+- has_many : users :through: :groups_users
+- has_many : chats
 
 ## chatテーブル----------------------------------------
 |Column|Type|Options|
