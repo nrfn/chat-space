@@ -1,3 +1,218 @@
 * {
   box-sizing: border-box;
 }
+
+.wrapper{
+  display: flex;
+}
+
+.side-bar{
+  width: 300px;
+  height: 100vh;
+  background-color: #2f3e51;
+  color: white;
+
+  .side-header{
+   height: 100px;
+   background-color: #253141;
+   position: relative;
+    .name-box{
+      width: 260px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .icon-box{
+        width: 60px;
+        text-align: right;
+        .fa-edit{
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .group-box{
+    width: 260px;
+    height: 91px;
+    margin: 0 auto;
+    position: relative;
+
+    .group-name{
+      height: 15px;
+      line-height: 15px;
+      font-size: 15px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+    .group-info{
+      height: 11px;
+      line-height: 11px;
+      font-size: 11px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+.messages-main{
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: #fafafa;
+  position: relative;
+
+  .messages-header{
+    width: calc(100vw - 300px);
+    height: 100px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+
+    .header-left{
+      width: 140px;
+      height: 100px;
+      position: relative;
+      .group-top{
+        color: #333333;
+        width: 100px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        position: absolute;
+        top: 35px;
+        left: 40px;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+      }
+      .member-name{
+        color: #999999;
+        width: 100px;
+        height: 12px;
+        font-size: 12px;
+        line-height: 12px;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+      }
+    }
+
+    .header-right{
+      width: 120px;
+      height: 100px;
+      position: relative;
+      .edit-bottun{
+        width: 32px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #38aef0;
+        position: absolute;
+        top: 28px;
+        left: 20px;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .messages-index{
+    padding-top: 35px;
+    padding-left: 40px;
+    .messenger{
+      display: flex;
+      .m-name{
+        color: #333333;
+        font-size: 16px;
+      }
+      .m-time{
+        padding-left: 10px;
+        color: #999999;
+        font-size: 16px;
+      }
+    }
+    .message{
+      margin-top: 12px;
+      color: #434A54;
+      font-size: 14px;
+    }
+
+    .messenger_2{
+      margin-top: 46px;
+      display: flex;
+      .m-name_2{
+        color: #333333;
+        font-size: 16px;
+      }
+      .m-time_2{
+        padding-left: 10px;
+        color: #999999;
+        font-size: 16px;
+      }
+    }
+    .message_2{
+      margin-top: 12px;
+      color: #434A54;
+      font-size: 14px;
+    }
+  }
+
+  .messages-bottom{
+    background-color: #d2d2d2;
+    position: absolute;
+    bottom: 0;
+    width: calc(100vw - 300px);
+    height: 90px;
+    display: flex;
+
+    .form-box{
+      width: 600px;
+      height: 50px;
+      line-height: 50px;
+      background-color: white;
+      margin-top: 20px;
+      margin-left: 50px;
+      display: flex;
+      justify-content: space-between;
+      .form-message{
+        color: gray;
+        width: 100%;
+        padding-left: 10px;
+      }
+      .form-icon{
+        padding-right: 10px;
+        font-size: 22px;
+        position: rilative;
+      }
+    }
+    .send-box{
+      background-color: #38aef0;
+      width: 100px;
+      height: 50px;
+      color: white;
+      line-height: 50px;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 15px;
+    }
+  }
+}
