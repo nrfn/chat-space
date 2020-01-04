@@ -120,10 +120,12 @@
       height: 100px;
       position: relative;
       .edit-bottun{
-        width: 32px;
+        width: 68px;
         height: 40px;
         font-size: 16px;
         line-height: 40px;
+        text-align: center;
+        border: 1px solid;
         color: #38aef0;
         position: absolute;
         top: 28px;
@@ -192,16 +194,14 @@
       margin-top: 20px;
       margin-left: 50px;
       display: flex;
-      justify-content: space-between;
       .form-message{
         color: gray;
         width: 100%;
         padding-left: 10px;
       }
-      .form-icon{
-        padding-right: 10px;
+      .icon-box{
         font-size: 22px;
-        position: rilative;
+        padding-right: 10px;
       }
     }
     .send-box{

@@ -28,12 +28,8 @@
 
   .messages-bottom
     .form-box
-      .form-message
-        type a message
-      .form-icon
+      %input.form-message{:placeholder => "type a message"}
+      .icon-box
         .fa.fa-image
-          -# %label{class: "input-box__image"}
-          -#   = icon('fas', 'image')
-          -#   %input{type: "file"}
     .send-box
       Send
