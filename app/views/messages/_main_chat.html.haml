@@ -1,38 +1,38 @@
-.messages-main
+.messages
 
-  .messages-header
-    .header-left
-      .group-top
+  .messages__header
+    .messages__header__left
+      .messages__header__left__group
         test
-      .member-name
+      .messages__header__left__member
         Member : name
-    .header-right
-      .edit-bottun
+    .messages__header__right
+      .messages__header__right__edit
         Edit
 
-  .messages-index
-    .messenger
-      .m-name
+  .messages__index
+    .messages__index__user
+      .messages__index__user__name
         masa
-      .m-time
+      .messages__index__user__time
         2019/11/20(Wed) 17:43:01
-    .message
+    .messages__index__message
       おはよう!
-    .messenger_2
-      .m-name_2
+    .messages__index__user2
+      .messages__index__user2__name
         masa
-      .m-time_2
+      .messages__index__user2__time
         2019/11/20(Wed) 17:43:34
-    .message_2
+    .messages__index__message2
       今日は夜から雨
 
-  .messages-bottom
-    .new-message
-      .input-box
-        %input.input-box_text{:placeholder => "type a message"}
-        .input-box_image
-          %label{class: "input-box__image"}
+  .messages__bottom
+    .messages__bottom__new
+      .messages__bottom__new__input
+        %input.messages__bottom__new__input__text{:placeholder => "type a message"}
+        .messages__bottom__new__input__icon
+          %label{class: "messages__bottom__new__input__icon__image"}
             = icon('fas', 'image')
             %input{type: "file"}
-      .send
+      .messages__bottom__new__send
         Send

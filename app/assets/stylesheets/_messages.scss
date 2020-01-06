@@ -6,17 +6,16 @@
   display: flex;
 }
 
-.side-bar{
+.side{
   width: 300px;
   height: 100vh;
   background-color: #2f3e51;
   color: white;
-
-  .side-header{
+  &__header{
    height: 100px;
    background-color: #253141;
    position: relative;
-    .name-box{
+    &__box{
       width: 260px;
       height: 20px;
       line-height: 20px;
@@ -29,23 +28,23 @@
       margin: auto;
       display: flex;
       justify-content: space-between;
-      .icon-box{
+      &__name{
         width: 60px;
         text-align: right;
+      }
+      &__icon{
         .fa-edit{
           padding-right: 5px;
         }
       }
     }
   }
-
-  .group-box{
+  &__group{
     width: 260px;
     height: 91px;
     margin: 0 auto;
     position: relative;
-
-    .group-name{
+    &__name{
       height: 15px;
       line-height: 15px;
       font-size: 15px;
@@ -56,7 +55,7 @@
       bottom: 0;
       margin: 0 auto;
     }
-    .group-info{
+    &__info{
       height: 11px;
       line-height: 11px;
       font-size: 11px;
@@ -70,24 +69,22 @@
   }
 }
 
-.messages-main{
+.messages{
   width: calc(100vw - 300px);
   height: 100vh;
   background-color: #fafafa;
   position: relative;
-
-  .messages-header{
+  &__header{
     width: calc(100vw - 300px);
     height: 100px;
     background-color: #eeeeee;
     display: flex;
     justify-content: space-between;
-
-    .header-left{
+    &__left{
       width: 140px;
       height: 100px;
       position: relative;
-      .group-top{
+      &__group{
         color: #333333;
         width: 100px;
         height: 20px;
@@ -100,7 +97,7 @@
         bottom: 0;
         margin: 0;
       }
-      .member-name{
+      &__member{
         color: #999999;
         width: 100px;
         height: 12px;
@@ -114,12 +111,11 @@
         margin: 0;
       }
     }
-
-    .header-right{
+    &__right{
       width: 120px;
       height: 100px;
       position: relative;
-      .edit-bottun{
+      &__edit{
         width: 68px;
         height: 40px;
         font-size: 16px;
@@ -136,86 +132,78 @@
       }
     }
   }
-
-  .messages-index{
+  &__index{
     padding-top: 35px;
     padding-left: 40px;
-    .messenger{
+    &__user{
       display: flex;
-      .m-name{
+      &__name{
         color: #333333;
         font-size: 16px;
       }
-      .m-time{
+      &__time{
         padding-left: 10px;
         color: #999999;
         font-size: 16px;
       }
     }
-    .message{
+    &__message{
       margin-top: 12px;
       color: #434A54;
       font-size: 14px;
     }
-
-    .messenger_2{
+    &__user2{
       margin-top: 46px;
       display: flex;
-      .m-name_2{
+      &__name{
         color: #333333;
         font-size: 16px;
       }
-      .m-time_2{
+      &__time{
         padding-left: 10px;
         color: #999999;
         font-size: 16px;
       }
     }
-    .message_2{
+    &__message2{
       margin-top: 12px;
       color: #434A54;
       font-size: 14px;
     }
-  }
-
-  .messages-bottom{
+  }  
+  &__bottom{
     background-color: #d2d2d2;
     position: absolute;
     bottom: 0;
     width: calc(100vw - 300px);
     height: 90px;
     padding: 20px 40px;
-
-    .new-message{
+    &__new{
       display: flex;
-
-      .input-box{
+      &__input{
         width: 100%;
         background-color: gray;
         position: relative;
-
-        .input-box_text{
+        &__text{
           width: 100%;
           height: 50px;
           padding: 0 40px 0 10px;
           color: #434A54;
         }
-
-        .input-box_image{
+        &__icon{
           font-size: 1.3rem;
           position: absolute;
           top: 10px;
           right: 10px;
           cursor: pointer;
-
-          .input-box__image{
+          &__image{
             input{
               display: none;
             }
           }
         }
       }
-      .send{
+      &__send{
         width: 100px;
         height: 50px;
         line-height: 50px;
