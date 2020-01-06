@@ -27,9 +27,12 @@
       今日は夜から雨
 
   .messages-bottom
-    .form-box
-      %input.form-message{:placeholder => "type a message"}
-      .icon-box
-        .fa.fa-image
-    .send-box
-      Send
+    .new-message
+      .input-box
+        %input.input-box_text{:placeholder => "type a message"}
+        .input-box_image
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file"}
+      .send
+        Send

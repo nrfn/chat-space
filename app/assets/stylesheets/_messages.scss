@@ -184,35 +184,47 @@
     bottom: 0;
     width: calc(100vw - 300px);
     height: 90px;
-    display: flex;
+    padding: 20px 40px;
 
-    .form-box{
-      width: 600px;
-      height: 50px;
-      line-height: 50px;
-      background-color: white;
-      margin-top: 20px;
-      margin-left: 50px;
+    .new-message{
       display: flex;
-      .form-message{
-        color: gray;
+
+      .input-box{
         width: 100%;
-        padding-left: 10px;
+        background-color: gray;
+        position: relative;
+
+        .input-box_text{
+          width: 100%;
+          height: 50px;
+          padding: 0 40px 0 10px;
+          color: #434A54;
+        }
+
+        .input-box_image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+
+          .input-box__image{
+            input{
+              display: none;
+            }
+          }
+        }
       }
-      .icon-box{
-        font-size: 22px;
-        padding-right: 10px;
+      .send{
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
       }
-    }
-    .send-box{
-      background-color: #38aef0;
-      width: 100px;
-      height: 50px;
-      color: white;
-      line-height: 50px;
-      text-align: center;
-      margin-top: 20px;
-      margin-left: 15px;
     }
   }
 }
