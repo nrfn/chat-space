@@ -10,7 +10,7 @@
   width: 300px;
   height: 100vh;
   background-color: #2f3e51;
-  color: white;
+  color: #ffffff;
   &__header{
    height: 100px;
    background-color: #253141;
@@ -35,6 +35,7 @@
       &__lists{
         display: flex;
         .icon{
+          font-size: 16px;
           color: white;
           padding-left: 5px;
         }
@@ -58,6 +59,7 @@
         right: 0;
         bottom: 0;
         margin: 0 auto;
+        color: #ffffff;
       }
       &__info{
         height: 11px;
@@ -69,6 +71,7 @@
         right: 0;
         bottom: 0;
         margin: 0 auto;
+        color:#ffffff;
       }
     }
   }
