@@ -1,14 +1,28 @@
 .side
   .side__header
     .side__header__box
-      .side__header__box__name
-        masa
-      .side__header__box__icon
-        %a.far.fa-edit
-        %span<>
-        %a.fas.fa-cog
-  .side__group
-    .side__group__name
-      techcamp
-    .side__group__info
-      まだメッセージがありません
+      %h3.side__header__box__name
+        = current_user.name
+      %ul.side__header__box__lists
+        %li.list
+          = link_to do 
+            = icon('fas', 'pen-square', class: 'icon')
+        %li.list
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
+  .side__groups
+    .side__groups__group
+      .side__groups__group__name
+        グループ名
+      .side__groups__group__info
+        新着メッセージ
+    .side__groups__group
+      .side__groups__group__name
+        グループ名
+      .side__groups__group__info
+        新着メッセージ
+    .side__groups__group
+      .side__groups__group__name
+        グループ名
+      .side__groups__group__info
+        新着メッセージ
