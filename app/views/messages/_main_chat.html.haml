@@ -1,4 +1,4 @@
-.messages
+.main
   .messages__header
     .messages__header__left
       .messages__header__left__group
@@ -12,7 +12,8 @@
       = link_to edit_group_path(@group) do
         .messages__header__right__edit
           Edit
-  = render @messages
+  .messages
+    = render @messages
   .messages__bottom
     .messages__bottom__new
       .messages__bottom__new__input

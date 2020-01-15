@@ -75,9 +75,10 @@
 
 .messages{
   width: calc(100vw - 300px);
-  height: 100vh;
+  height: calc(100vh - 190px);
   background-color: #fafafa;
   position: relative;
+  overflow: scroll;
   &__header{
     background-color: white;
     border-bottom: solid 1px #eee;
@@ -144,6 +145,7 @@
   &__index{
     padding-top: 35px;
     padding-left: 40px;
+    margin-bottom: 20px;
     &__user{
       display: flex;
       &__name{
