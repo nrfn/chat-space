@@ -34,7 +34,7 @@ $(function() {
     $.ajax({
       type: "GET",
       url: "/users",
-      data: { keyword: input },
+      data: { keyword: input, member_ids },
       dataType: "json"
     })
     .done(function(users) {
